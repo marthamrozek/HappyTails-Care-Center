@@ -1,0 +1,193 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - PET GIVEAWAY PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, giveaway a pet, surrender a dog, surrender a cat">
+    <title>Give away a Pet - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+            <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+    <ul>
+        <li><a href="home.html">Home Page</a></li>
+        <li><a href="pets.html">Browse Available Pets</a></li>
+        <li><a href="find.html">Find a Dog or a Cat</a></li>
+        <li><a href="dogcare.html">Dog Care</a></li>
+        <li><a href="catcare.html">Cat Care</a></li>
+        <li><a class="active" href="giveaway.html">Have a pet to give away</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Using the Form tag, users will search for their pet with a series of questions they must fill out.-->
+            <h1>Have a pet to Giveaway?</h1><br><br>
+            <h3 class="center-align">Please fill this form out, we would be happy to help you.</h3><br>
+
+            <!--Creating the second fieldset tag for the cat.-->
+            <fieldset class="legend1 fieldset_l">
+                <legend>By submitting this form you can help your pet find a new forever home:</legend>
+                    <div>
+                    <!--Creating a form tag that uses the "mail to" action to submit the user entered contact information, using the "post" method for added security.-->
+                    <form id="petGiveawayForm" action="mailto:mrozek.martha@gmail.com" onsubmit="return validatePetGiveawayForm(event)" method="post" enctype="text/plain">
+
+                        <!--Using radio input type to ask whether the user is giving away a dog or cat.-->
+                        <p class="bold">Are you giving away a cat or a dog?</p>
+                            <input type="radio" id="cat" name="cat" value="Cat">
+                            <label for="cat">Cat</label>
+                            <input type="radio" id="dog" name="gender" value="Dog">
+                            <label for="dog">Dog</label>                   
+                        <br><br>
+                        <!--Using checkboxes to ask what breed the users pet is.-->
+                        <p class="bold">If you are giving away a cat, what is its breed?</p>
+                        <!--Creating "Persian" checkbox-->
+                        <input type="checkbox" id="catbreed1" name="catbreed1" value="Persian">
+                        <label for="catbreed1">Persian</label>
+                        <!--Creating "Siamese" checkbox-->
+                        <input type="checkbox" id="catbreed2" name="catbreed2" value="Siamese">
+                        <label for="catbreed2">Siamese</label>
+                        <!--Creating "Maine Coon" checkbox-->
+                        <input type="checkbox" id="catbreed3" name="catbreed3" value="Maine Coon">
+                        <label for="catbreed3">Maine Coon</label>
+                        <br>
+                        <!--Creating "Ragdoll" checkbox-->
+                        <input type="checkbox" id="catbreed4" name="catbreed4" value="Ragdoll">
+                        <label for="catbreed4">Ragdoll</label>
+                        <!--Creating "Mixed Breed" checkbox-->
+                        <input type="checkbox" id="catbreed5" name="catbreed5" value="Mixed Breed">
+                        <label for="catbreed5">Mixed Breed</label>
+                        <!--Creating "Unknown" checkbox-->
+                        <input type="checkbox" id="catbreed6" name="catbreed6" value="Unknown">
+                        <label for="catbreed6">Unknown</label>
+                        <br><br><br>
+
+                        <p class="bold">If you are giving away a dog, what is its breed?</p>
+                        <!--Creating "Labrador Retriever" checkbox-->
+                        <input type="checkbox" id="dogbreed1" name="dogbreed1" value="Labrador Retriever">
+                        <label for="dogbreed1">Labrador Retriever</label>
+                        <!--Creating "German Shepherd" checkbox-->
+                        <input type="checkbox" id="dogbreed2" name="dogbreed2" value="German Shepherd">
+                        <label for="dogbreed2">German Shepherd</label>
+                        <!--Creating "Golden Retriever" checkbox-->
+                        <input type="checkbox" id="dogbreed3" name="dogbreed3" value="Golden Retriever">
+                        <label for="dogbreed3">Golden Retriever</label>
+                        <br>
+                        <!--Creating "Poodle" checkbox-->
+                        <input type="checkbox" id="dogbreed4" name="dogbreed4" value="Poodle">
+                        <label for="dogbreed4">Poodle</label>
+                        <!--Creating "Mixed Breed" checkbox-->
+                        <input type="checkbox" id="dogbreed5" name="dogbreed5" value="Mixed Breed">
+                        <label for="dogbreed5">Mixed Breed</label>
+                        <!--Creating "Unkown" checkbox-->
+                        <input type="checkbox" id="dogbreed6" name="dogbreed6" value="Unkown">
+                        <label for="dogbreed6">Unkown</label>
+                        <br><br><br>
+
+                        <!--Creating a drop down menu using the select element for users to submit the rough age of their pet.-->
+                        <label for="age">What is the age of the pet you wish to giveaway?</label><br>
+                        <select name="age" id="age">
+                            <option value="less1">Less than 1 years old</option>
+                            <option value="1to2">Between 1 and 2 years old</option>
+                            <option value="2to3">Between 2 and 3 years old</option>
+                            <option value="3to4">Between 3 and 4 years old</option>
+                            <option value="4to5">Between 4 and 5 years old</option>
+                            <option value="5to6">Between 5 and 6 years old</option>
+                            <option value="6to7">Between 6 and 7 years old</option>
+                            <option value="7to8">Between 7 and 8 years old</option>
+                            <option value="8to9">Between 8 and 9 years old</option>
+                            <option value="9to10">Between 9 and 10 years old</option>
+                            <option value="greater10">Greater than 15 years old</option>
+                            <option value="unsure">Unsure of age</option>                   
+                        </select>
+                        <br><br>
+
+                        <!--Using radio input type to ask for the gender of the users pet.-->
+                        <p class="bold">What is the gender of your pet you wish to giveaway?</p>
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>                   
+                        <br><br>
+                        <!--Using checkboxes to ask if the users pet gets along with other dogs, cats or small children.-->
+                        <p class="bold">Is your pet suitable to live in a family with any of the following? Please check all that apply.</p>                
+                        <!--Creating "Other dogs" checkbox-->
+                        <input type="checkbox" id="compatible1" name="compatible1" value="Other dogs">
+                        <label for="compatible1">Other dogs</label>
+                        <!--Creating "Other cats" checkbox-->
+                        <input type="checkbox" id="compatible2" name="compatible2" value="Other cats">
+                        <label for="compatible2">Other cats</label>
+                        <!--Creating "Small children" checkbox-->
+                        <input type="checkbox" id="compatible3" name="compatible3" value="Small children">
+                        <label for="compatible3">Small children</label>
+                        <!--Creating "None of the options listed." checkbox-->
+                        <input type="checkbox" id="compatible4" name="compatible4" value="None of the options listed.">
+                        <label for="compatible4">None of the options listed.</label>
+                        <br><br><br>
+                        
+                        <!--Creating a label and input tag for a message in order for a user to be able to enter a message about the animal they are placing up for adoption.-->
+                        <label for="message">Please type your message here if you wish to give more information about your pet: </label>
+                        <textarea id="message" name="message" rows="20" cols="60"></textarea>
+                        <br><br>
+
+                        <!--Creating a label and input tag for "Full Name" in order for a user to be able to enter their name and submit it.-->
+                        <label for="fname">Please enter your full name: </label>
+                        <input type="text" id="fname" name="fullname">
+                        <br>
+                        <!--Creating a label and input tag for "email" in order for a user to be able to enter their email and submit it-->
+                        <label for="email">Please enter your email: </label>
+                        <input type="email" id="email" name="email">
+                        <br><br>
+
+                        <!--Creating an input tag for a submit button in order for a user to be able to submit all of the previous information in the contact form-->
+                        <input type="submit" value="Submit">
+                        <!--Creating an input tag for a clear button in order for a user to be able to clear all of the previous information in the contact form-->
+                        <input type="reset" value="Clear">
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>    
+</body>
+</html>

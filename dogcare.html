@@ -1,0 +1,94 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - DOG CARE PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, dog care">
+    <title>Dog Care - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+            <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+        <ul>
+            <li><a href="home.html">Home Page</a></li>
+            <li><a href="pets.html">Browse Available Pets</a></li>
+            <li><a href="find.html">Find a Dog or a Cat</a></li>
+            <li><a class="active" href="dogcare.html">Dog Care</a></li>
+            <li><a href="catcare.html">Cat Care</a></li>
+            <li><a href="giveaway.html">Have a pet to give away</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Dog Care</h1><br>
+            
+            <!--Statement about ensuring the user is ready to adopt.-->
+            <h2>Are you ready to adopt a Dog?</h2>
+            <div class="blurb">
+                A dog can be a wonderful addition to any home, but whether you're an experienced pet parent or a first-time 
+                adopter, it's important to keep your canine companion's health and happiness a top priority. Below are some 
+                useful tips for all dog parents.<br><br>
+
+                And remember: If you're considering bringing home a new dog, please make adoption your first option. We 
+                encourage you to browse our directory of adoptable dogs in your area or visit our Find a Shelter page to start 
+                your search.<br><br>
+
+                (This information was brought to you by the ASPCA. To learn more, folllow this link to their information about
+                <a href="https://www.aspca.org/pet-care/dog-care/general-dog-care">General Dog Care</a>.)
+            </div><br><br>
+
+            <!--Statement about basic care and needs.-->
+            <h2>Visit these helpful links to websites with great information about all your Dog Care Questions:</h2><br>
+            <div>
+                <a href="https://mydoglikes.com/dog-essentials-the-ultimate-guide-to-getting-a-dog/">55+ Dog Essentials - The Ultimate Guide to Getting a Dog!</a><br><br>
+                <a href="https://www.petmd.com/dog/care/responsible-pet-owners-checklist-taking-care-pet">The Responsible Pet Owner's Checklist for Taking Care of a Pet</a><br><br>
+                <a href="https://spca.bc.ca/wp-content/uploads/dog-care-guide.pdf">BC SPCA Dog Care Guide - PDF</a><br><br>
+                <a href="https://www.companionanimalpsychology.com/2017/04/the-ultimate-dog-training-tip.html">The Ultimate Dog Training Tip</a><br><br>
+            </div>
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>
+</body>
+</html>

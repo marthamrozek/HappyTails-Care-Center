@@ -1,0 +1,335 @@
+/*______________________________________________________________________________________________
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. YAN
+Assesment Title: Assignment 02
+________________________________________________________________________________________________*/
+/* CSS Style code for Assignment 2 - Question 7 */
+/*THIS PAGE IS VALIDATED USING: CSS and CSS Level 3 + SVG*/
+/*______________________________________________________________________________________________*/
+
+/*__________________________________CSS CODE FOR: LAYOUT__________________________________*/
+/*Creating my layout for all my webpages:*/
+/*NORMALIZING- Using the * element to select all html elements on my webpages and getting rid of margins to be able to create the layout I want.*/
+* {
+  margin: 0px;
+  padding: 0px;
+  /*Adding box-sizing=border-box in order to avoid having to add and subtract the %'s of height and width for my layout.*/
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #47423f;
+}
+/*Creating the styling for the header of my webpages*/
+#header-div {
+  width: 100%;
+  min-height: 100px;
+  background-color: #c0b0a9;
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  /*Adding the line height to center the logo and header text to the center of the header area.*/
+  text-align: left;
+  line-height: 80px;
+  margin-bottom: 5px;
+}
+
+/*Creating the styling for the parent class of the main area, the parent class contains my sidebar and content area of my webpages*/
+#main-div {
+  width: 100%;
+  margin-bottom: 5px;
+}
+/*Creating the styling for the side bar of my webpages*/
+#sidebar-div {
+  width: 18%;
+  min-height: 1200px;
+  /*background-color: #d9cbc2;*/
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/*Creating the styling for the content area of my webpages*/
+#content-area-div {
+  width: 81%;
+  min-height: 1200px;
+  /*background-color: #d9cbc2;*/
+  float: right;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/*Creating the styling after the main area by getting rid of the floats from the side bar and content area 
+and reverting back to the block display*/
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*Creating the styling for the footer of my webpages*/
+#footer-div {
+  width: 100%;
+  min-height: 50px;
+  background-color: #d6849a;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+
+
+/*__________________________________CSS CODE FOR: GENERAL STYLING__________________________________*/
+/*Creating the logo styling to format it better in the header.*/
+.logo {
+  line-height: 100px;
+  margin: 0px;
+  padding: 0px;
+  width:150px;
+  height:90px;
+}
+/*creating the bold class to make reading the forms easier.*/
+.bold {
+  font-weight: bold;
+}
+/*Creating a class to style the statement portion of my page and ensuring it is centered*/
+.statement {
+  text-align: center;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 21px;
+  max-width: 45em;   
+}
+/*Styling the fieldset tag to ensure it is centered and add personal aesthetic touches*/
+.fieldset_c {
+  margin:auto;
+  background-color: #e0d5cf;
+  max-width: 60em;
+  text-align: center; 
+}
+/*Styling the fieldset tag to ensure it is to the left and add personal aesthetic touches*/
+.fieldset_l {
+  margin:auto;
+  background-color: #e0d5cf;
+  max-width: 60em;
+  text-align: left; 
+}
+/*Creating the legend class to style the legend of the fieldset tag*/
+.legend > legend:first-of-type{
+  text-align: center;
+  color: #564535;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  max-width: 50em;            
+}
+/*Creating the legend class to style the legend of the fieldset tag*/
+.legend1 > legend:first-of-type{
+  text-align: left;
+  color: #612032;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  max-width: 50em;            
+}
+/*Creating the styling for the <h3> tag*/
+h3 {
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
+  font-family: "Arial", Helvetica, sans-serif;
+  max-width: 45em;
+}
+.center-align {
+  text-align: center;
+}
+.imbedded_video {
+  width: 400px;
+  height: 200px;
+}
+.blurb {
+  text-align: center;
+  max-width: 45em;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 21px;
+  background-color: #e0d5cf;
+  border:#47423f;
+  border-radius: 10px;
+  border-width: 5px;
+}
+.founder_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+ /*__________________________________CSS CODE FOR: contact.html__________________________________*/
+  /*Creating styling for the <body> tag to chnage the font-family to remain consisent accross my webpages*/
+  body {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  /*Creating the styling for the <img> tag and ensuring it is centered for the webpage*/
+  .center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 3000px;
+    font-family: "Arial", Helvetica, sans-serif;
+  }
+  /*Creating styling for the <input> tag of type=text so that the style is consistent to my webpages and for the 
+  name, and message box fields to be left aligned*/
+  input[type=text], select, textarea {
+      text-align: left;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid;
+      border-radius: 5px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+  input[type=email] {
+    text-align: left;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  /*Creating styling for the <input> tag of type=submit so that the style is consistent to my webpages*/
+  input[type=submit] {
+      background-color: #d6849a;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  input[type=reset] {
+    background-color: #d6849a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  /*Creating styling for when a cursor is hovering over the submit button on the contact form*/
+  input[type=submit]:hover {
+      background-color: #c7647e;
+   }
+  /*Creating styling for when a cursor is hovering over the reset button on the contact form*/
+  input[type=reset]:hover {
+    background-color: #c7647e;
+   }
+  /*Creating a class called "container" for styling my contact form background*/
+  .container {
+      border-radius: 5px;
+      background-color: #ffe9ec;
+      padding: 20px;
+  }
+
+
+
+/*__________________________________CSS CODE FOR: NAVIGATION SIDE BAR TABS/LINKS__________________________________*/
+/*Creating the styling for the <ul> tag to get rid of the bullet points and adding base background colour.*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  border-radius: 5px;
+  background-color: #c0b0a9;
+}
+/*Creating each list items styling so it does not display the default underlining or blue colour for example.*/
+li a {
+    display: block;
+    color: #47423f;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Creating the styling to make the active page (home) green with white text.*/
+li a.active {
+    background-color: #9fc697;
+    color: #47423f;
+    border-radius: 5px;
+}
+/*Creating the styling to change the link colour when mouse hovers over each list item in navbar.*/
+li a:hover:not(.active) {
+    background-color: #a3958c;
+    color: #47423f;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/******************************************************************/
+/*CSS FOR DISPLAY AVAILABLE PETS IN A GALLERY WALL FORMAT:*/
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/******************************************************************/

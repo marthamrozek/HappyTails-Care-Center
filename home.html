@@ -1,0 +1,110 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - HOME PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption">
+    <title>Home Page - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet and JavaScript-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+             <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+    <ul>
+        <li><a class="active" href="home.html">Home Page</a></li>
+        <li><a href="pets.html">Browse Available Pets</a></li>
+        <li><a href="find.html">Find a Dog or a Cat</a></li>
+        <li><a href="dogcare.html">Dog Care</a></li>
+        <li><a href="catcare.html">Cat Care</a></li>
+        <li><a href="giveaway.html">Have a pet to give away</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Home Page</h1><br>
+            <!--Adding a 'giveaway contact us' blurb paragraph-->
+            <fieldset class="legend fieldset_c">
+                <legend>HappyTails Adoption Haven</legend>
+                <div class="statement">
+                    <p><br>
+                        Welcome to HappyTails Adoption Haven, a heart-centered sanctuary for cats and dogs seeking their forever homes. 
+                        Our website is designed to be your go-to destination for all things pet adoption and care. On our Home Page, 
+                        discover the warmth and joy that defines our mission, and explore the heartwarming stories of pets finding their
+                        forever families. While our "Browse Available Pets" page is currently under construction, you can anticipate a 
+                        delightful space to meet and connect with your potential new family member.<br><br>
+                        
+                        Navigate to the "Find a Dog or Cat" page to start your journey towards companionship. Whether you are drawn to 
+                        the playful antics of a kitten or the loyal presence of a seasoned dog, this page is your gateway to discovering
+                        pets available for adoption. Explore our comprehensive "Dog Care" and "Cat Care" pages to access valuable tips, 
+                        advice, and resources to ensure a happy and healthy life for your new furry friend.<br><br>
+                        
+                        For those facing life changes or transitions, our "Have a Pet to Give Away" page provides a compassionate 
+                        platform to find a loving home for your cherished companion. Reach out to us through the "Contact Us" page for 
+                        any inquiries, adoption questions, or general information. HappyTails Adoption Haven is not just a website; 
+                        it's a community dedicated to bringing joy to both pets and their forever families. Join us in creating 
+                        heartwarming stories of love, loyalty, and companionship.</p><br><p></p>
+                </div>
+            </fieldset>
+
+            <fieldset class="legend fieldset_c">
+                <legend>Founder Message</legend>
+                <div class="statement">
+                    Dear HappyTails Adoption Haven Community,<br><br>
+                        
+                    Your choice to adopt reflects a commitment to compassion and a belief in second chances. Together, we are 
+                    building a community where every wagging tail and purring friend finds the love and security they deserve. 
+                    Thank you for choosing adoption, for opening your hearts to those in need, and for making HappyTails 
+                    Adoption Haven a beacon of hope for animals in search of their forever homes.<br><br>
+
+                    <img class="founder_image" src="martha_and_rocky.jpg" alt="A picture of Martha and Rocky.">
+                    
+                    With heartfelt gratitude,<br>
+                    Martha and Rocky<br>
+                    Founder and best furry friend, HappyTails Adoption Haven<br>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>     
+</body>
+</html>

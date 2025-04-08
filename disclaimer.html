@@ -1,0 +1,106 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - DISCLAIMER PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, privacy warning, disclaimer">
+    <title>Privacy/Disclaimer Page - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+            <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+    <ul>
+        <li><a href="home.html">Home Page</a></li>
+        <li><a href="pets.html">Browse Available Pets</a></li>
+        <li><a href="find.html">Find a Dog or a Cat</a></li>
+        <li><a href="dogcare.html">Dog Care</a></li>
+        <li><a href="catcare.html">Cat Care</a></li>
+        <li><a href="giveaway.html">Have a pet to give away</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Please read the following statement:</h1><br>
+            <!--Adding a legal disclaimer blurb paragraph-->
+            <fieldset class="legend fieldset_c">
+                <legend>HappyTails Adoption Haven Privacy Warning and Legal Disclaimer</legend>
+                <div class="statement">
+                    <h3>Privacy Warning:</h3>
+                    HappyTails Adoption Haven is committed to protecting your privacy. We want to assure you that any personal information 
+                    you provide during your visit will not be sold or misused. Your trust is important to us, and we prioritize the security 
+                    and confidentiality of your data. By using our site, you consent to the collection and use of your information as described 
+                    in our Privacy Policy. For more details on how we handle your information and our commitment to your privacy, please review 
+                    our Privacy Policy.<br><br>
+
+                    <h3>Legal Disclaimer</h3>
+                    The information provided on the HappyTails Adoption Haven website is for general informational purposes only. While we strive 
+                    to keep the information up-to-date and accurate, we make no representations or warranties of any kind, express or implied, 
+                    about the completeness, accuracy, reliability, suitability, or availability concerning the website or the information, 
+                    products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information 
+                    is therefore strictly at your own risk.<br><br>
+
+                    In no event will we be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, 
+                    or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.<br><br>
+
+                    Through this website, you can link to other websites that are not under the control of HappyTails Adoption Haven. We have no control 
+                    over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation 
+                    or endorse the views expressed within them.<br><br>
+
+                    We also want to emphasize that the information posted by pet owners on our platform is their responsibility, and we do not guarantee 
+                    the accuracy or authenticity of such information. Users are encouraged to verify details independently. HappyTails Adoption Haven cannot 
+                    be held liable for any misinformation provided by pet owners.<br><br>
+
+                    <b>
+                        Your use of this website implies acceptance of these terms and conditions. If you do not agree with any part of these terms and 
+                        conditions, please do not use our website.
+                    </b>
+
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div> 
+</body>
+</html>

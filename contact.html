@@ -1,0 +1,114 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - CONTACT PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, contact page">
+    <title>Contact Us - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+            <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+    <ul>
+        <li><a href="home.html">Home Page</a></li>
+        <li><a href="pets.html">Browse Available Pets</a></li>
+        <li><a href="find.html">Find a Dog or a Cat</a></li>
+        <li><a href="dogcare.html">Dog Care</a></li>
+        <li><a href="catcare.html">Cat Care</a></li>
+        <li><a href="giveaway.html">Have a pet to give away</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+    </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Contact Us</h1><br>
+                <!--Adding an 'adoption contact us' blurb paragraph-->
+                <!--Using the fieldset and div tag to print the 'adoption contact us' blurb, centered with respect to the layout of the webpage-->
+                <fieldset class="legend fieldset_c">
+                    <legend>Adopt don't shop!</legend>
+                    <div class="statement">
+                        <p>Thank you for considering HappyTails Adoption Haven for your furry companionship needs. We're here to assist you 
+                            in providing loving homes for cats and dogs. If you have any questions about our adoption process, want to inquire 
+                            about a specific pet, or if you're interested in volunteering, please don't hesitate to reach out. <br><br>
+                            
+                            Our team is dedicated to ensuring a seamless and joyful adoption experience. Feel free to use the contact form on the "Contact Us" 
+                            webpage, drop us an email or give us using the Contact Information at the bottom of this page. 
+                            We look forward to hearing from you and helping you find your pawwwfect new furry friend!</p>
+                    </div>
+                </fieldset><br>
+
+                <!--Adding a 'giveaway contact us' blurb paragraph-->
+                <fieldset class="legend fieldset_c">
+                    <legend>Do you have a pet to give away? We can help.</legend>
+                    <div class="statement">
+                        <p>Making the decision to rehome a beloved pet can be a challenging one, and at HappyTails Adoption Haven, 
+                            we understand and empathize. If you find yourself in a situation where you need to find a new loving home for 
+                            your furry friend, we are here to help. Our compassionate team is dedicated to facilitating a seamless and 
+                            caring transition for pets in need. By partnering with us, you can ensure that your pet will be placed in a 
+                            responsible and loving environment. We work tirelessly to match pets with families who can provide the care and 
+                            attention they deserve.<br><br>
+                            
+                            To discuss rehoming options, please reach out to us through the contact form on our "Have a pet to give away" 
+                            webpage, send us an email, or give us a call using the Contact Information at the bottom of this page. 
+                            Your pet's well-being is our priority, and we are committed to assisting you during this challenging time.</p>
+                    </div>
+                </fieldset><br>
+
+                <!--Adding the contact info-->
+                <fieldset class="legend fieldset_c">
+                    <legend>Contact Information:</legend>
+                    <div class="statement">
+                        <p>
+                            Head of the adoption service: Martha Mrozek<br>
+                            ID#: 40180784<br>
+                            Email: mrozek.martha@gmail.com<br>
+                            Phone: (514) 208-3598<br>
+                        </p>
+                    </div>
+                </fieldset> 
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>   
+</body>
+</html>

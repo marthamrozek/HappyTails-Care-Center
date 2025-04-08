@@ -1,0 +1,130 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - BROWSE AVAILABLE PETS PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, available pets">
+    <title>Available Pets - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+             <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+            <!--Creating the unordered list for the vertical navigation bar.-->
+            <ul>
+                <li><a href="home.html">Home Page</a></li>
+                <li><a class="active" href="pets.html">Browse Available Pets</a></li>
+                <li><a href="find.html">Find a Dog or a Cat</a></li>
+                <li><a href="dogcare.html">Dog Care</a></li>
+                <li><a href="catcare.html">Cat Care</a></li>
+                <li><a href="giveaway.html">Have a pet to give away</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Browse Available Pets</h1><br>
+
+            <!--ADDING IMAGES FOR AVAIALBLE PETS-->
+            <div class="responsive">
+                <div class="gallery">
+                    <a>
+                        <img src="kitty.jpg" alt="Kitty the Great Dane" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        This is Kitty, she is a Great Dane.<br><br>
+                        <input type="submit" value="Interested">
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a>
+                        <img src="meredith.jpg" alt="Meredith the Scottish Fold" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        This is Meredith Grey, she is a Scottish Fold.<br><br>
+                        <input type="submit" value="Interested">
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a>
+                        <img src="olivia.jpg" alt="Olivia the Scottish Fold" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        This is Olivia Benson, she is a Scottish Fold.<br><br>
+                        <input type="submit" value="Interested">
+                    </div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a>
+                        <img src="benjamin.jpg" alt="Benjamin the Ragdoll" width="600" height="400">
+                    </a>
+                    <div class="desc">
+                        This is Benjamin Button, he is a Ragdoll.<br><br>
+                        <input type="submit" value="Interested">
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+                <div style="padding:6px;">
+                    <p>
+                        This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px 
+                        wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by 
+                        side. For screens smaller than 500px, the images will stack vertically (100%).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>
+</body>
+</html>

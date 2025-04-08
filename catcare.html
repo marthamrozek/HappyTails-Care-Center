@@ -1,0 +1,92 @@
+<!--______________________________________________________________________________________
+Student Name: Martha Mrozek
+Student I.D.: 40180784
+
+Course Code: SOEN-287 (Section S)
+Course Title: Web Programming
+Semester: Winter 2024
+Due: Sunday, March 31 2024
+
+Instructor: Dr. Y. Yan
+Assesment Title: Assignment 02
+______________________________________________________________________________________-->
+<!--QUESTION 7 - CAT CARE PAGE-->
+<!--THIS PAGE IS VALIDATED USING: HTML5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Question 7 of Assignment 2 for SOEN-287 Winter 2024">
+    <meta name="author" content="Martha Mrozek">
+    <meta name="keywords" content="Dog and cat adoption website, dog, cat, adoption, cat care">
+    <title>Cat Care - HappyTails Adoption Haven</title>
+
+    <!--Linking the external Cascading Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <script src="happytails.js"></script>
+</head>
+<body>
+    <!--Creating the div tag with class=grid to style the webpage layout.-->
+    <div id="header-div">
+        <h1>
+            <!--Adding adoption service logo-->
+            <!--Logo is taken from free adobe stock photos. link: https://stock.adobe.com/ca/search?k=cat+heart+tail&asset_id=132620725-->
+            <img class="logo" src="happytails-logo.jpg" alt="Logo of HappyTails Adoption Haven." usemap="#map_logo">
+            <map name="map_logo" id="map_logo">
+                <!--Linking correct logo coordinates to the home page of HappyTails Adoption Haven-->
+                <area shape="rect" coords="0,0,150,90" href="home.html" alt="This is a link to the Home Page of HappyTails Adoption Haven.">
+            </map>
+        </h1>
+        <div id="current-time">
+            <span id="datetime"></span>
+        </div>
+    </div>
+    <!--Creating the main area that contains the side bar and the content area.-->
+    <div id="main-div" class="clearfix">
+        <div id="sidebar-div">
+        <!--Creating the unordered list for the vertical navigation bar.-->
+    <ul>
+        <li><a href="home.html">Home Page</a></li>
+        <li><a href="pets.html">Browse Available Pets</a></li>
+        <li><a href="find.html">Find a Dog or a Cat</a></li>
+        <li><a href="dogcare.html">Dog Care</a></li>
+        <li><a class="active" href="catcare.html">Cat Care</a></li>
+        <li><a href="giveaway.html">Have a pet to give away</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+        </div>
+        <div id="content-area-div">
+            <!--Creating the heading of the page.-->
+            <h1>Cat Care</h1><br>
+                <!--Statement about ensuring the user is ready to adopt.-->
+                <h2>Are you ready to adopt a Cat?</h2>
+                <div class="blurb">
+                    Have you recently added a feline friend to your family? Congratulations! We know you'll be thrilled to have 
+                    your new cat in your home. If you are considering adopting a cat, please visit your local shelter. We encourage 
+                    you to browse our directory of adoptable cats in your area, or use our shelter finder to start your search.<br><br>
+
+                    Read on for useful tips for new cat parents, and for those looking to brush up on their pet care skills.<br><br>
+    
+                    (This information was brought to you by the ASPCA. To learn more, folllow this link to their information about
+                    <a href="https://www.aspca.org/pet-care/cat-care/general-cat-care">General Cat Care</a>.)
+                </div><br><br>
+    
+                <!--Statement about basic care and needs.-->
+                <h2>Visit these helpful links to websites with great information about all your Cat Care Questions:</h2><br>
+                <div>
+                    <a href="https://pethelpful.com/cats/cat-care-101">Cat Care 101: A Guide for New Cat Owners</a><br><br>
+                    <a href="https://www.petsbest.com/cat-owners-guide">The Complete New Cat Owners Guide</a><br><br>
+                    <a href="https://www.rspca.org.uk/adviceandwelfare/pets/cats">Cat Care Tips, Advice & Health Information - Pets</a><br><br>
+                    <a href="https://www.pumpkin.care/blog/how-to-train-a-cat/">How To Train A Cat: The Beginner’s Guide to Good Kitty Behavior</a><br><br>
+                </div>
+            
+        </div>
+    </div>
+    <!--Creating the footer-->
+    <div id="footer-div">
+        User information will not be sold or misused, and protects the website builder from any incorrect information posted 
+        by a pet owner. For more information click here: <a href="disclaimer.html">Privacy/Disclaimer Statement</a>.
+    </div>    
+</body>
+</html>
